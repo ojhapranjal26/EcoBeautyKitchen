@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAQ | EcoBeautyKitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">EcoBeautyKitchen</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">ContactUs</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="faq">
+        <section>
+            <div class="faq-container">
+                <h1>Frequently Asked Questions</h1>
+                <div class="faq-item">
+                    <h3 class="question">1. What is EcoBeautyKitchen?</h3>
+                    <p class="answer">EcoBeautyKitchen is a collection of homemade skincare recipes using natural
+                        ingredients to promote sustainable beauty.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="question">2. Are these recipes safe for all skin types?</h3>
+                    <p class="answer">Our recipes use natural ingredients, but we recommend conducting a patch test
+                        before full application to avoid allergic reactions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="question">3. How long do these homemade products last?</h3>
+                    <p class="answer">Most recipes last for about 1-2 weeks when stored in a cool, dry place. Since no
+                        preservatives are used, the shelf life may be shorter.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="question">4. Where can I find the ingredients?</h3>
+                    <p class="answer">You can find the ingredients for our recipes at local grocery stores, health food
+                        stores, or online retailers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="question">5. Can I modify the recipes?</h3>
+                    <p class="answer">Yes, feel free to adjust the recipes based on your skin type or preferences, but
+                        be cautious of how certain ingredients may interact.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="aboutimage.jpeg" alt="Safa">
+                </div>
+                <div class="about-content">
+                    <h2>Safa Mujawar</h2>
+                    <p><strong>Hi, I'm Safa!</strong> Welcome to Eco Beauty Kitchen, where you'll learn all about making
+                        clean beauty products with herbal ingredients and essential oils. Read on for our best tips,
+                        techniques, and recipes for natural beauty.</p>
+                    <a href="about.html" class="about-link">Learn more about me &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#" class="back-to-top">BACK TO TOP</a>
+            <div class="footer-content">
+                <div class="info">
+                    <h3>INFO</h3>
+                    <ul>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="affiliate.html">Affiliate Policy</a></li>
+                    </ul>
+                </div>
+                <div class="connect">
+                    <h3>CONNECT</h3>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>
+                                Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li><a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i>
+                                Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="aboutfooter">
+                    <h3>ABOUT</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2024 EcoBeautyKitchen. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Responsive Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let questions = document.querySelectorAll('.question');
+            questions.forEach(function (question) {
+                question.addEventListener('click', function () {
+                    this.nextElementSibling.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
