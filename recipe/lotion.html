@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBeautyKitchen/Lotion, oil + Butters</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* Stylish Heading */
+        h2 {
+			padding-top: 50px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Stylish Paragraph */
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            text-align: center;
+            margin: 20px 15%;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 400px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .image-description {
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container img {
+                width: 90%;
+                height: auto;
+				padding-left: 35px;
+            }
+            p {
+                margin: 20px 5%;
+            }
+        }
+    </style>
+
+    <!-- Adding Google Fonts for Styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">EcoBeautyKitchen</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../contact.html">ContactUs</a></li>
+                <li><a href="../faq.html">FAQs</a></li>
+                <li><a href="../team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Lotion, Body Butter + Body Oil Recipes</h2>
+            <p>Moisturize and nurture your skin with homemade body lotions, body butters and body oils. It doesn't get any more luxurious than that!</p>
+        </section>
+
+        <div class="image-container">
+            <div>
+                <a href="lotion1.html"><img src="images/lotion1.jpg" alt="Natural Creams"></a>
+                <div class="image-description">DIY Self Tanner 3 Ways for a Natural Sunless Tan</div>
+            </div>
+            <div>
+                <a href="lotion2.html"><img src="images/lotion2.jpg" alt="Natural Moisturizers"></a>
+                <div class="image-description">How to Make a Super Soothing Bug Bite Balm</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#" class="back-to-top">BACK TO TOP</a>
+            <div class="footer-content">
+                <div class="info">
+                    <h3>INFO</h3>
+                    <ul>
+                        <li><a href="../privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="../disclaimer.html">Disclaimer</a></li>
+                        <li><a href="../affiliate.html">Affiliate Policy</a></li>
+                    </ul>
+                </div>
+                <div class="connect">
+                    <h3>CONNECT</h3>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="aboutfooter">
+                    <h3>ABOUT</h3>
+                    <ul>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2024 EcoBeautyKitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
